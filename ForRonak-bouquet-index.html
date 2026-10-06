@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Surprise For Ronak ❤️</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;font-family:Georgia,"Times New Roman",serif;overflow:hidden;background:#f9e8ed;color:#5b2634}
+.screen{min-height:100vh;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px;background:radial-gradient(circle at 20% 20%,#fff7f8 0 8%,transparent 25%),radial-gradient(circle at 80% 80%,#f4cbd5 0 8%,transparent 28%),linear-gradient(135deg,#fff8f9,#f7dce4);position:relative}
+.hidden{display:none}
+.heart{font-size:75px;color:#b73555;margin-bottom:20px;animation:heartbeat 1.6s infinite}
+h1{font-size:42px;line-height:1.15;font-weight:normal;color:#70283b;margin-bottom:18px}
+#welcome p{font-family:Arial,sans-serif;font-size:17px;color:#8b5361;margin-bottom:32px}
+button{border:none;background:#8f2944;color:white;padding:15px 32px;border-radius:50px;font-size:17px;font-family:Arial,sans-serif;box-shadow:0 8px 25px rgba(100,30,50,.2);cursor:pointer;transition:transform .2s}
+button:active{transform:scale(.94)}
+#bouquetScreen{justify-content:center}
+.sparkles{position:absolute;top:12%;font-size:22px;color:#c59654;letter-spacing:7px;animation:sparkle 2s infinite alternate}
+.bouquet{position:relative;width:300px;height:370px;margin-bottom:15px;animation:appear 1.2s ease forwards}
+.flowers{position:absolute;top:20px;left:15px;width:270px;height:220px}
+.flower{position:absolute;font-size:65px;filter:drop-shadow(0 7px 5px rgba(80,20,30,.15));animation:flowerBloom 1.3s ease forwards;opacity:0}
+.r1{left:25px;top:55px;animation-delay:.2s}.r2{left:105px;top:15px;animation-delay:.4s}.r3{left:175px;top:55px;animation-delay:.6s}
+.t1{left:65px;top:100px;font-size:58px;animation-delay:.8s}.t2{left:145px;top:105px;font-size:58px;animation-delay:1s}
+.f1{left:0;top:15px;font-size:50px;animation-delay:.5s}.f2{left:210px;top:15px;font-size:50px;animation-delay:.7s}
+.leaves{position:absolute;top:165px;left:25px;font-size:55px;letter-spacing:-18px;z-index:0;opacity:.9}
+.paper{position:absolute;bottom:5px;left:48px;width:205px;height:170px;background:linear-gradient(135deg,#f4c9b8,#e6a995);clip-path:polygon(12% 0,88% 0,100% 100%,50% 75%,0 100%);z-index:5;box-shadow:0 10px 20px rgba(80,30,30,.15)}
+.ribbon{position:absolute;width:28px;height:180px;background:#9c2947;left:89px;top:-5px;transform:rotate(8deg);opacity:.9}
+.bow{position:absolute;bottom:35px;left:72px;font-size:60px;z-index:6}
+.message{position:relative;z-index:10;margin-top:-10px}
+.message h2{font-size:27px;line-height:1.25;color:#8f2944;font-weight:normal;margin-bottom:14px;text-shadow:0 2px 8px rgba(143,41,68,.12)}
+.message p{font-family:Arial,sans-serif;font-size:16px;line-height:1.6;color:#80515c}
+.message .small{margin-top:10px;font-size:13px;font-style:italic;color:#a16b76}
+.replay{margin-top:18px;padding:10px 22px;font-size:14px;background:transparent;color:#8f2944;border:1px solid #b96a7d;box-shadow:none}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.floating-heart{position:absolute;bottom:-30px;font-size:22px;animation:floatUp 4s linear forwards}
+@keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+@keyframes flowerBloom{0%{opacity:0;transform:scale(.2) translateY(30px)}70%{transform:scale(1.12)}100%{opacity:1;transform:scale(1)}}
+@keyframes sparkle{from{opacity:.4;transform:translateY(0)}to{opacity:1;transform:translateY(-8px)}}
+@keyframes appear{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes floatUp{from{transform:translateY(0) rotate(0deg);opacity:1}to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+</style>
+</head>
+<body>
+<div class="screen" id="welcome">
+  <div class="heart">♡</div>
+  <h1>A little surprise<br>for Ronak... ❤️</h1>
+  <p>Made especially for you, Ronak 💌</p>
+  <button onclick="openBouquet()">Open it 🎁</button>
+</div>
+
+<div class="screen hidden" id="bouquetScreen">
+  <div class="sparkles">✦　✧　✦　✧　✦</div>
+  <div class="bouquet">
+    <div class="flowers">
+      <div class="flower rose r1"><span>🌹</span></div>
+      <div class="flower rose r2"><span>🌹</span></div>
+      <div class="flower rose r3"><span>🌹</span></div>
+      <div class="flower tulip t1"><span>🌷</span></div>
+      <div class="flower tulip t2"><span>🌷</span></div>
+      <div class="flower flower3 f1"><span>🌸</span></div>
+      <div class="flower flower3 f2"><span>🌸</span></div>
+    </div>
+    <div class="leaves">🌿🌿🌿🌿🌿</div>
+    <div class="paper"><div class="ribbon"></div><div class="bow">🎀</div></div>
+  </div>
+  <div class="message">
+    <h2>This is for you,<br>my bandar 😚❤️🦧</h2>
+    <p>These flowers may be virtual,<br>but the love behind them isn't. 🌷</p>
+    <p class="small">Made with love, just for you, Ronak. ♡</p>
+  </div>
+  <button class="replay" onclick="location.reload()">↻ Replay</button>
+</div>
+
+<div id="hearts"></div>
+<script>
+function openBouquet(){
+  const welcome=document.getElementById("welcome");
+  const bouquetScreen=document.getElementById("bouquetScreen");
+  welcome.style.opacity="0";
+  setTimeout(()=>{
+    welcome.classList.add("hidden");
+    bouquetScreen.classList.remove("hidden");
+    createHearts();
+  },500);
+}
+function createHearts(){
+  const container=document.getElementById("hearts");
+  const hearts=["❤️","💕","💗","♡","🌸"];
+  for(let i=0;i<18;i++){
+    const heart=document.createElement("div");
+    heart.className="floating-heart";
+    heart.innerHTML=hearts[Math.floor(Math.random()*hearts.length)];
+    heart.style.left=Math.random()*100+"%";
+    heart.style.animationDelay=Math.random()*3+"s";
+    heart.style.fontSize=(14+Math.random()*18)+"px";
+    container.appendChild(heart);
+  }
+}
+</script>
+</body>
+</html>
